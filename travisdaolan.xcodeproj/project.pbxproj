@@ -15,6 +15,8 @@
 		747374D21FB6A3190013ED74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 747374D11FB6A3190013ED74 /* main.m */; };
 		747374DC1FB6A3190013ED74 /* travisdaolanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 747374DB1FB6A3190013ED74 /* travisdaolanTests.m */; };
 		747374E71FB6A3190013ED74 /* travisdaolanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 747374E61FB6A3190013ED74 /* travisdaolanUITests.m */; };
+		747374F51FB6CEEF0013ED74 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 747374F41FB6CEEF0013ED74 /* .travis.yml */; };
+		A0DA36473A86C04AB89A36F2 /* libPods-travisdaolan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8B0EA10FA9596B20AA43AD /* libPods-travisdaolan.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CB7EA7BFCE786E1382420CB /* Pods-travisdaolan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travisdaolan.release.xcconfig"; path = "Pods/Target Support Files/Pods-travisdaolan/Pods-travisdaolan.release.xcconfig"; sourceTree = "<group>"; };
+		6E8B0EA10FA9596B20AA43AD /* libPods-travisdaolan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-travisdaolan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		747374BF1FB6A3190013ED74 /* travisdaolan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travisdaolan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		747374C21FB6A3190013ED74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		747374C31FB6A3190013ED74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		747374E21FB6A3190013ED74 /* travisdaolanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = travisdaolanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		747374E61FB6A3190013ED74 /* travisdaolanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = travisdaolanUITests.m; sourceTree = "<group>"; };
 		747374E81FB6A3190013ED74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		747374F41FB6CEEF0013ED74 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
+		D3076A1F74B23612A949756A /* Pods-travisdaolan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travisdaolan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-travisdaolan/Pods-travisdaolan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0DA36473A86C04AB89A36F2 /* libPods-travisdaolan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +92,8 @@
 				747374DA1FB6A3190013ED74 /* travisdaolanTests */,
 				747374E51FB6A3190013ED74 /* travisdaolanUITests */,
 				747374C01FB6A3190013ED74 /* Products */,
+				A5698115D752C4E693AD5F0F /* Pods */,
+				E020706F3CA57C7B9219ED40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +119,7 @@
 				747374CD1FB6A3190013ED74 /* LaunchScreen.storyboard */,
 				747374D01FB6A3190013ED74 /* Info.plist */,
 				747374D11FB6A3190013ED74 /* main.m */,
+				747374F41FB6CEEF0013ED74 /* .travis.yml */,
 			);
 			path = travisdaolan;
 			sourceTree = "<group>";
@@ -132,6 +142,23 @@
 			path = travisdaolanUITests;
 			sourceTree = "<group>";
 		};
+		A5698115D752C4E693AD5F0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3076A1F74B23612A949756A /* Pods-travisdaolan.debug.xcconfig */,
+				2CB7EA7BFCE786E1382420CB /* Pods-travisdaolan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E020706F3CA57C7B9219ED40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E8B0EA10FA9596B20AA43AD /* libPods-travisdaolan.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 747374EB1FB6A3190013ED74 /* Build configuration list for PBXNativeTarget "travisdaolan" */;
 			buildPhases = (
+				EE60986ECBF6C31436DC1FC4 /* [CP] Check Pods Manifest.lock */,
 				747374BB1FB6A3190013ED74 /* Sources */,
 				747374BC1FB6A3190013ED74 /* Frameworks */,
 				747374BD1FB6A3190013ED74 /* Resources */,
+				E1516F7EEDA65C80005B6A36 /* [CP] Embed Pods Frameworks */,
+				C15BE307D4F6A8296395C454 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +270,7 @@
 			files = (
 				747374CF1FB6A3190013ED74 /* LaunchScreen.storyboard in Resources */,
 				747374CC1FB6A3190013ED74 /* Assets.xcassets in Resources */,
+				747374F51FB6CEEF0013ED74 /* .travis.yml in Resources */,
 				747374CA1FB6A3190013ED74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +290,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C15BE307D4F6A8296395C454 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-travisdaolan/Pods-travisdaolan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1516F7EEDA65C80005B6A36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-travisdaolan/Pods-travisdaolan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE60986ECBF6C31436DC1FC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-travisdaolan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		747374BB1FB6A3190013ED74 /* Sources */ = {
@@ -428,6 +510,7 @@
 		};
 		747374EC1FB6A3190013ED74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3076A1F74B23612A949756A /* Pods-travisdaolan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +525,7 @@
 		};
 		747374ED1FB6A3190013ED74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CB7EA7BFCE786E1382420CB /* Pods-travisdaolan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
