@@ -1,3 +1,4 @@
 language: objective-c
 osx_image: xcode9.1
+xcode_workspace: travisdaolan.xcworkspace
 xcode_scheme: travisdaolanTests
