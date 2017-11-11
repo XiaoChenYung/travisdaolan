@@ -1,5 +1,5 @@
 language: objective-c
 osx_image: xcode9.1
+xcode_workspace: travisdaolan.xcworkspace
 script:
-  - xctool -workspace travisdaolan.xcworkspace -scheme travisdaolan -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
   - xctool test -workspace travisdaolan.xcworkspace -scheme travisdaolanTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
