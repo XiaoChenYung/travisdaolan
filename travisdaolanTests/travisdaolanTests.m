@@ -16,6 +16,7 @@
 
 - (void)setUp {
     [super setUp];
+    NSAssert(false, @"挂了");
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
