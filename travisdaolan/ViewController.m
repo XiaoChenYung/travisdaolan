@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSAssert(true, @"挂掉了");
+    NSArray *array = @[@1, @2, @3, @4];
+    [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSLog(@"%@",obj);
+    }];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
